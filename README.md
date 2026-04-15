@@ -7,4 +7,4 @@ Script simples para menutençã rápida do sistema Arch linux.
  - mostar uso de armazenamento e memoria
 
 -Uso
-Basta arrastar o arquivo para o terminal e pronto
+ - Basta arrastar o arquivo para o terminal e pronto
