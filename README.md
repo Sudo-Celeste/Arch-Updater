@@ -5,3 +5,6 @@ Script simples para menutençã rápida do sistema Arch linux.
  - atualizar sistema
  - limpar cache
  - mostar uso de armazenamento e memoria
+
+-Uso
+Basta arrastar o arquivo para o terminal e pronto
