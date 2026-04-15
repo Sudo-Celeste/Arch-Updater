@@ -1,0 +1,33 @@
+#!/bin/bash
+
+set -e
+
+echo "System update..."
+sudo pacman -Syu --noconfirm
+
+echo ""
+echo "flatpak update..."
+flatpak update -y
+
+echo ""
+echo "Cleaning pacman cache..."
+sudo pacman -Sc --noconfirm
+
+echo ""
+echo "Removing unused flatpak repos"
+flatpak uninstall --unused -y
+
+echo ""
+echo "Cleaning older journalctl logs"
+sudo journalctl --vacuum-time=7d
+
+echo ""
+echo "Disk usage:"
+df -h
+
+echo ""
+echo "Memory Usage"
+free -h
+
+echo ""
+echo "All done:)"
